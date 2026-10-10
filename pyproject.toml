@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seesaw-policy"
+version = "0.1.0"
+description = "Depth-based seesaw policy trained from scratch with recurrent PPO"
+requires-python = ">=3.12"
+dependencies = ["torch==2.12.1", "mjlab==1.6.0", "mujoco==3.11.0", "mujoco-warp==3.11.0", "warp-lang==1.17.0", "numpy", "PyYAML", "tensorboard", "Pillow", "viser"]
+
+[project.scripts]
+seesaw-policy-train = "seesaw_policy.train:main"
+seesaw-policy-play = "seesaw_policy.play:main"
+
+[tool.setuptools.packages.find]
+include = ["seesaw_policy*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.json", "*.yaml", "*.yml", "LICENSE*", "recipes/*.json"]

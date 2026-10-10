@@ -1,0 +1,17 @@
+{
+  "source_repository": "go2VISION_rl_gym",
+  "source_commit": "a7e1565867bee10c21f5362001b419e006b6195b",
+  "scope": "Independent seesaw policy: randomly initialized recurrent PPO and one-env playback. No label model, distillation or pretrained actor/critic.",
+  "selected_tests": [
+    "test_seesaw_policy.py",
+    "test_seesaw_rewards.py"
+  ],
+  "git_history": "New repository; original Git history not copied",
+  "entrypoints": [
+    "seesaw-policy-train",
+    "seesaw-policy-play"
+  ],
+  "environment": "100% seesaw; no flat, rough or other stage training scenes",
+  "runtime_namespace": "seesaw_policy.env",
+  "clean_branch": "student"
+}

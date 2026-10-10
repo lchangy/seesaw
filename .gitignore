@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+logs/
+outputs/
+checkpoints/
+*.tmp
+*.pt
+!datasets/go2_recovery/fallen_flat_20260908_filtered/states.pt
